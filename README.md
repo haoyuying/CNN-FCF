@@ -19,3 +19,11 @@ python inference_cifar.py --model 'resnet56' -n 18 -reference-model 'resnet56_ci
 
 python inference_cifar.py --model 'resnet110' -n 36 -reference-model 'resnet110_cifar_full.pkl' -finetune-model 'finetune_model_checkpoint'
 ```
+
+## reproduce the ImageNet results in our paper
+```
+python inference_imagenet_resnet34.py --model 'resnet34' -reference-model 'resnet34-333f7ec4.pth' -finetune-model 'finetune_model_checkpoint' 
+
+python inference_imagenet_resnet50.py --model 'resnet50' -reference-model 'resnet50-19c8e357.pth' -finetune-model 'finetune_model_checkpoint' 
+
+```
